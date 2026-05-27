@@ -32,3 +32,8 @@ def contact():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
+@app.route('/download-resume')
+def download_resume():
+    from flask import send_file
+    return send_file('static/Akshay_Soni_Resume.docx', as_attachment=True)
