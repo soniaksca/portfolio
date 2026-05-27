@@ -1,4 +1,4 @@
-\// Navigation scroll effect
+// Navigation scroll effect
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     
