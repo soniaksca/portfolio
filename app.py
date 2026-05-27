@@ -1,6 +1,12 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
+# Get the absolute path to the current directory
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__,
+           template_folder=os.path.join(basedir, 'Templates'),
+           static_folder=os.path.join(basedir, 'Static'))
 app.secret_key = 'your-secret-key-change-this-for-production'
 
 @app.route('/')
