@@ -1,0 +1,102 @@
+<!-- Templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Soni | Full-Stack & Mobile Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="{{ url_for('home') }}" class="logo">Akshay Soni</a>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}" class="active">Home</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge"><i class="fas fa-code"></i> Available for opportunities</span>
+                <h1>Hi, I'm <span class="highlight">Akshay Soni</span></h1>
+                <p class="tagline">Full-Stack & Mobile Developer</p>
+                <p class="bio">
+                    I build scalable mobile apps, REST APIs, and cloud-based systems using React Native, C#, and MongoDB.
+                    Computer Science student at Sheridan College with experience in cloud, mobile, and data systems.
+                    Currently working as Data Analyst Intern and Sales Associate.
+                </p>
+                <div class="btn-group">
+                    <a href="{{ url_for('projects') }}" class="cta-button"><i class="fas fa-arrow-right"></i> View Projects</a>
+                    <a href="{{ url_for('static', filename='Akshay_Soni_Resume.pdf') }}" class="secondary-button" download><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a passionate developer with a strong foundation in full-stack and mobile development. My journey in tech started with a curiosity for how things work, and it's grown into a career focused on building impactful digital solutions.</p>
+                    <br>
+                    <p>I thrive in collaborative environments and love tackling complex problems. Whether it's architecting a scalable backend or designing an intuitive mobile interface, I bring dedication and technical excellence to every project.</p>
+                    <br>
+                    <p><i class="fas fa-map-marker-alt"></i> Ontario, Canada | <i class="fas fa-envelope"></i> akshay.soni@example.com</p>
+                </div>
+                <div class="about-highlight">
+                    <i class="fas fa-medal" style="color:#1E4A6F; font-size: 2rem;"></i>
+                    <p style="margin-top: 15px;"><strong>✨ 2+ years</strong> of hands-on dev experience<br>
+                    📱 5+ cross-platform projects completed<br>
+                    ☁️ Azure & MongoDB certified<br>
+                    🎓 Sheridan College - Computer Science</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-card"><i class="fas fa-code"></i> C#</div>
+                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fab fa-react"></i> React Native</div>
+                <div class="skill-card"><i class="fas fa-database"></i> MongoDB</div>
+                <div class="skill-card"><i class="fas fa-table"></i> SQL</div>
+                <div class="skill-card"><i class="fab fa-microsoft"></i> Azure</div>
+                <div class="skill-card"><i class="fab fa-git-alt"></i> Git/GitHub</div>
+                <div class="skill-card"><i class="fas fa-cloud"></i> REST APIs</div>
+                <div class="skill-card"><i class="fab fa-swift"></i> Swift</div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>© 2026 Akshay Soni | Built with <i class="fas fa-heart" style="color: #e25555;"></i> for innovation</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

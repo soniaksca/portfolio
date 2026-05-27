@@ -1,0 +1,45 @@
+<!-- <form method="POST" action="/contact" class="contact">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+</form> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="/" class="logo">Akshay Soni</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+
+<form method="POST" action="/contact" class="contact">
+    <h1>Contact Me</h1>
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Message"></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+
+</main>
+
+<footer>© 2026 Akshay Soni</footer>
+
+</body>
+</html>
