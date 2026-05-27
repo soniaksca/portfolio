@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+import os
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here-change-this-in-production'
+app.secret_key = 'your-secret-key-change-this'
 
 @app.route('/')
 def home():
@@ -18,17 +19,17 @@ def contact():
         email = request.form.get('email')
         message = request.form.get('message')
         
-        # Print to console (in production, you'd send an email)
-        print(f"📧 New Contact Message:")
-        print(f"   Name: {name}")
-        print(f"   Email: {email}")
-        print(f"   Message: {message}")
+        print(f"📧 New message from {name} ({email}): {message}")
         print("-" * 50)
         
-        flash('Thank you for your message! I will get back to you soon.', 'success')
-        return redirect(url_for('contact'))
+        flash('Thank you for your message! I will respond soon.', 'success')
+        return redirect(url_for('home') + '#contact')
     
-    return render_template('contact.html')
+    return render_template('index.html')
+
+@app.route('/download-resume')
+def download_resume():
+    return send_from_directory('static', 'Akshay_Soni_Resume.docx', as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)

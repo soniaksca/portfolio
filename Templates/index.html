@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshay Soni | Full-Stack & Mobile Developer Portfolio</title>
+    <title>Akshay Soni | Full-Stack & Mobile Developer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -15,6 +15,7 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -28,16 +29,16 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="hero-badge"><i class="fas fa-code"></i> Available for opportunities</span>
+                    <span class="hero-badge"><i class="fas fa-code"></i> Open for opportunities</span>
                     <h1>Hi, I'm <span class="highlight">Akshay Soni</span></h1>
                     <p class="tagline">Full-Stack & Mobile Developer</p>
                     <p class="bio">
-                        I build scalable mobile apps, REST APIs, and cloud-based systems using React Native, C#, and MongoDB.
-                        Computer Science student at Sheridan College.
+                        Computer Science student at Sheridan College with 2+ years of experience in full-stack development, 
+                        data analytics, and mobile applications. Currently working as Sales Associate at Home Depot Canada.
                     </p>
                     <div class="btn-group">
                         <a href="#projects" class="btn-primary"><i class="fas fa-arrow-right"></i> View Projects</a>
-                        <a href="{{ url_for('static', filename='Akshay_Soni_Resume.pdf') }}" class="btn-secondary" download><i class="fas fa-download"></i> Resume</a>
+                        <a href="{{ url_for('download_resume') }}" class="btn-secondary" download><i class="fas fa-download"></i> Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -59,23 +60,25 @@
             <div class="about-grid">
                 <div class="about-card">
                     <i class="fas fa-user-graduate"></i>
-                    <h3>My Journey</h3>
-                    <p>Computer Science student at Sheridan College with experience in cloud, mobile, and data systems. Currently working as Data Analyst Intern and Sales Associate.</p>
+                    <h3>Education</h3>
+                    <p>Bachelor of Computer Science - Mobile Computing<br>Sheridan College, Canada<br>Sep 2021 - Dec 2025</p>
                 </div>
                 <div class="about-card">
                     <i class="fas fa-bullseye"></i>
-                    <h3>My Mission</h3>
-                    <p>To build innovative digital solutions that solve real-world problems and create meaningful impact through technology.</p>
+                    <h3>Location</h3>
+                    <p>Toronto, Canada<br>Open for relocation</p>
+                    <p><i class="fas fa-phone"></i> +1 647-865-1347</p>
+                    <p><i class="fas fa-envelope"></i> canakashy1@gmail.com</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certifications</h3>
+                    <p>• Microsoft Azure Certified<br>• Dispatch and Freight Brokerage</p>
                 </div>
                 <div class="about-card">
                     <i class="fas fa-heart"></i>
-                    <h3>My Passion</h3>
-                    <p>Creating seamless user experiences, writing clean code, and continuously learning new technologies.</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>My Goal</h3>
-                    <p>To become a leading full-stack developer working on impactful projects that change lives.</p>
+                    <h3>Leadership</h3>
+                    <p>Project Lead at Sheridan College, spearheading the "Sheridan Connect" initiative improving campus-wide information sharing by 30%.</p>
                 </div>
             </div>
         </div>
@@ -95,15 +98,119 @@
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">15+</span>
-                    <span class="stat-label">Happy Clients</span>
+                    <span class="stat-label">Technologies</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
+                    <span class="stat-number">30%</span>
+                    <span class="stat-label">Improvement Impact</span>
                 </div>
             </div>
         </div>
     </section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Professional journey & achievements</p>
+        </div>
+        <div class="experience-grid">
+            <!-- Sales Associate - Current -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Sales Associate</h3>
+                    <span class="exp-date">Jan 2026 - Present</span>
+                </div>
+                <p class="exp-company">Home Depot Canada</p>
+                <ul>
+                    <li>Managed purchase orders (PO) and generated system-pushed orders, assuming departmental leadership in supervisor's absence</li>
+                    <li>Conducted interactive product workshops demonstrating features, leading to 10% increase in product sales</li>
+                    <li>Trained newly joined associates on enterprise retail systems and inventory management tools, reducing onboarding time by 20%</li>
+                    <li>Worked in data-driven retail environment supporting high-volume inventory pricing and merchandising operations</li>
+                    <li>Leveraged supply chain analytics to drive continuous performance and process improvements</li>
+                </ul>
+            </div>
+
+            <!-- Data Analyst Intern -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Data Analyst Intern</h3>
+                    <span class="exp-date">Feb 2025 - Aug 2025</span>
+                </div>
+                <p class="exp-company">NTS Canada</p>
+                <ul>
+                    <li>Analyzed fleet scheduling and transportation data using complex SQL queries (MySQL, PostgreSQL) to extract actionable insights</li>
+                    <li>Organized and cleaned large datasets in MS Excel using pivot tables and query optimization techniques for route optimization</li>
+                    <li>Worked with IoT systems to track assets in real-time, ensuring data accuracy across transportation operations</li>
+                    <li>Created interactive reports and dashboards using Tableau to visualize actionable insights for operations team</li>
+                    <li>Collaborated with cross-functional teams to solve operational challenges using data-driven approaches</li>
+                </ul>
+            </div>
+
+            <!-- Operations Associate - NEW -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Operations Associate</h3>
+                    <span class="exp-date">Dec 2021 - Aug 2023 · 1 yr 9 mos</span>
+                </div>
+                <p class="exp-company">Mauser Packaging Solutions · Permanent Part-time</p>
+                <p class="exp-location">Mississauga, Ontario, Canada · On-site</p>
+                <ul>
+                    <li>Worked as a Forklift Operator with responsibilities extending beyond standard operating duties, functioning at a level just below a supervisor</li>
+                    <li>Handled receiving operations, material handling, inventory movement, loading/unloading, and general warehouse tasks</li>
+                    <li>Supported daily operations and ensured efficiency across multiple areas of the workplace</li>
+                    <li>Demonstrated team leadership and cross-team collaboration skills</li>
+                </ul>
+            </div>
+
+            <!-- Mentor Role -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Mentor</h3>
+                    <span class="exp-date">Sep 2023 - Jan 2024</span>
+                </div>
+                <p class="exp-company">Career Education Council</p>
+                <ul>
+                    <li>Delivered structured Swift programming lessons applying SDLC principles and OOP concepts to build foundational coding skills</li>
+                    <li>Guided students through mobile app development including RESTful API integration and secure authentication (JWT)</li>
+                    <li>Taught unit testing, integration testing, and version control (GIT) for production-ready applications</li>
+                    <li>Helped students deploy apps to TestFlight and App Store</li>
+                </ul>
+            </div>
+
+            <!-- Information Technology Operator - NEW -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Information Technology Operator</h3>
+                    <span class="exp-date">Nov 2020 - Aug 2021 · 10 mos</span>
+                </div>
+                <p class="exp-company">Satyam Cafe</p>
+                <ul>
+                    <li>Tested proprietary database software installations to ensure system reliability</li>
+                    <li>Managed hardware development for 5-core machine, optimizing performance</li>
+                    <li>Applied programming languages and computer science principles to solve technical challenges</li>
+                    <li>Provided IT support and maintained system integrity</li>
+                </ul>
+            </div>
+
+            <!-- Project Lead -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Project Lead</h3>
+                    <span class="exp-date">Sep 2023 - May 2024</span>
+                </div>
+                <p class="exp-company">Sheridan College - Sheridan Connect Initiative</p>
+                <ul>
+                    <li>Spearheaded the "Sheridan Connect" initiative as project lead, responsible for strategic planning and task delegation</li>
+                    <li>Guided a multidisciplinary team to successfully launch a student portal improving campus-wide information sharing by 30%</li>
+                    <li>Managed stakeholder communication and ensured project milestones were met on time</li>
+                    <li>Implemented Agile methodologies for efficient project delivery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -113,54 +220,26 @@
                 <p class="section-subtitle">Technologies I work with</p>
             </div>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <span>C#</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <span>React Native</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <span>MongoDB</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-table"></i>
-                    <span>SQL</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-microsoft"></i>
-                    <span>Azure</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git/GitHub</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <span>REST APIs</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-swift"></i>
-                    <span>Swift</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-node"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5/CSS3</span>
-                </div>
+                <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
+                <div class="skill-card"><i class="fas fa-code"></i><span>C#</span></div>
+                <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fab fa-typescript"></i><span>TypeScript</span></div>
+                <div class="skill-card"><i class="fab fa-react"></i><span>React Native</span></div>
+                <div class="skill-card"><i class="fab fa-react"></i><span>ReactJS</span></div>
+                <div class="skill-card"><i class="fab fa-angular"></i><span>Angular</span></div>
+                <div class="skill-card"><i class="fab fa-node"></i><span>Node.js</span></div>
+                <div class="skill-card"><i class="fab fa-swift"></i><span>Swift</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i><span>MongoDB</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="skill-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                <div class="skill-card"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+                <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
+                <div class="skill-card"><i class="fas fa-chart-line"></i><span>Tableau</span></div>
+                <div class="skill-card"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+                <div class="skill-card"><i class="fas fa-cloud"></i><span>REST APIs</span></div>
+                <div class="skill-card"><i class="fab fa-figma"></i><span>Figma</span></div>
             </div>
         </div>
     </section>
@@ -175,47 +254,47 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Sheridan Connect</h3>
+                    <p>Cloud-hosted, multi-platform React Native app delivering real-time campus news and department data to students.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
                         <i class="fas fa-car-side"></i>
                     </div>
                     <h3>HitchARide</h3>
-                    <p>Swift ride-sharing app with real-time booking, live location tracking, and seamless rider-driver matching.</p>
+                    <p>Swift-based ride-sharing application allowing users to post and book rides with real-time location-based search.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Swift</span>
                         <span class="tech-tag">SwiftUI</span>
                         <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">MapKit</span>
+                        <span class="tech-tag">JWT</span>
                     </div>
                     <a href="https://github.com/soniaks123/HitchARide" class="project-link" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>LesGo</h3>
-                    <p>C# ride-sharing platform with scalable backend, .NET Core Web API, and real-time notifications.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">.NET Core</span>
-                        <span class="tech-tag">MSSQL</span>
-                        <span class="tech-tag">SignalR</span>
-                    </div>
-                    <a href="https://github.com/bobin13/LesGo" class="project-link" target="_blank">View Code <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>DataInsight Dashboard</h3>
-                    <p>Interactive analytics dashboard with React, Node.js, and MongoDB aggregation pipelines.</p>
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Interactive dashboards using Tableau and Power BI to visualize actionable insights for operations team.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Python</span>
                     </div>
-                    <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#" class="project-link">View Demo <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -234,7 +313,11 @@
                     <p>I'm always interested in hearing about new opportunities and exciting projects.</p>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Ontario, Canada</span>
+                        <span>Toronto, Canada (Open for relocation)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 647-865-1347</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -246,7 +329,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/akshaysoni</span>
+                        <span>linkedin.com/in/akshxy1</span>
                     </div>
                 </div>
                 <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
@@ -274,18 +357,19 @@
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="social-links">
                 <a href="https://github.com/soniaksca" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/akshxy1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Akshay Soni. All rights reserved. Built with <i class="fas fa-heart" style="color: #e25555;"></i></p>
+            <p>&copy; 2026 Akshay Soni. All rights reserved. Built with <i class="fas fa-heart" style="color: #E05454;"></i></p>
         </div>
     </div>
 </footer>

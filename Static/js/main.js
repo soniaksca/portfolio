@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Active navigation highlighting
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section, .stats');
     const navLinks = document.querySelectorAll('.nav-links a');
     
     window.addEventListener('scroll', () => {
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: #10b981;
+            background: linear-gradient(135deg, #C13383, #792CA2);
             color: white;
             padding: 12px 24px;
             border-radius: 12px;
             z-index: 9999;
             animation: slideIn 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             font-weight: 500;
         `;
         document.body.appendChild(msgDiv);
@@ -123,7 +123,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.about-card, .skill-card, .project-card, .stat-card').forEach(el => {
+document.querySelectorAll('.about-card, .skill-card, .project-card, .stat-card, .experience-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

@@ -669,6 +669,75 @@ footer {
     }
 }
 
+/* Experience Section */
+.experience {
+    background: #0f0f0f;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.experience-card {
+    background: linear-gradient(135deg, #141414, #1a1a2e);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(68, 49, 153, 0.3);
+    transition: all 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(193, 51, 131, 0.5);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.exp-header h3 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.exp-date {
+    color: #C13383;
+    font-weight: 600;
+}
+
+.exp-company {
+    color: #888;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.experience-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-card ul li {
+    color: #aaa;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-card ul li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #C13383;
+}
+
+
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -686,3 +755,46 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #E05454, #C13383);
 } 
+
+/* Experience Section Enhancement */
+.experience-card {
+    background: linear-gradient(135deg, #141414, #1a1a2e);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(68, 49, 153, 0.3);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, #E05454, #C13383, #792CA2);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.experience-card:hover::before {
+    opacity: 1;
+}
+
+.exp-location {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exp-location::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 400;
+    color: #C13383;
+}
